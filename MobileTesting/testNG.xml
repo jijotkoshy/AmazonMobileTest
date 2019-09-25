@@ -7,8 +7,6 @@
 <parameter name = "serverURL" value="http://0.0.0.0:4723/wd/hub"/>
 
  <test thread-count="1" name="Login">
-<!--   <parameter name = "firstNumber" value="2.567"/> -->
-<!--   <parameter name = "secondNumber" value="2.5"/> -->
     <classes>
       <class name="com.appium.test.mobiletesting.AmazonLoginTest"/>
     </classes>
