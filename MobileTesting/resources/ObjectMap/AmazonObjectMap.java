@@ -29,8 +29,6 @@ public enum AmazonObjectMap {
 		Amazon_ALLBUYINGOPTION_ACC ("\nSee All Buying Options\n"),
 		Amazon_ADDTOCART_XPATH ("(//*[contains(@content-desc,'Add to Cart')])[1]"),
 		Amazon_CART_ACC ("Cart"),
-		//ShoppingCart
-		//com.amazon.mShop.android.shopping:id/action_bar_cart_count
 		//DUMMY WEB ELEMENT DO NOT DELETE
 		Amazon_XPATH_ID ("ENDS"); 
 

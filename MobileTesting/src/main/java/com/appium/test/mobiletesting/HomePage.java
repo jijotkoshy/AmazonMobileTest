@@ -7,7 +7,11 @@ import com.appium.test.utils.CommonUtils;
 
 import ObjectMap.AmazonObjectMap;
 import io.appium.java_client.android.AndroidKeyCode;
-
+/**
+ * 
+ * @author Jijo
+ *
+ */
 public class HomePage extends CommonUtils{
 
 	
@@ -19,8 +23,8 @@ public class HomePage extends CommonUtils{
 	private boolean ValidateLogin() {
 		if(findElementWhenReady(AmazonObjectMap.Amazon_HEADER_XPATH) != null)
 		{
-			System.out.println("Login Successfull");
-			Reporter.log("Login Successfull");
+			System.out.println("Login Successful");
+			Reporter.log("Login Successful");
 			return true;
 		} else {
 			System.out.println("Login Failed");
@@ -33,6 +37,8 @@ public class HomePage extends CommonUtils{
 		clickOnElement(findElementWhenReady(AmazonObjectMap.Amazon_SEARCHTEXTBOX_XPATH));
 		enterText(findElementWhenReady(AmazonObjectMap.Amazon_SEARCHTEXTBOX_XPATH), data);
 		driver.pressKeyCode(AndroidKeyCode.ENTER);
+		System.out.println("Searched for Data: "+data);
+		Reporter.log("Searched for Data: "+data);
 		Thread.sleep(5000);
 		scrollVerticalBottonToUp(4);
 		Thread.sleep(3000);
